@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
         availableBullet.SetActive(projectileEnabled);
     }
 
-    public void DisableProjectile()
+    private void DisableProjectile()
     {
         projectileEnabled = false;
         availableBullet.SetActive(projectileEnabled);

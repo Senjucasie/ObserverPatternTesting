@@ -35,6 +35,11 @@ public class PowerupController :MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
        //TODO: Apply Power ups
+       if(powerType==PowerType.Shield)
+        {
+            PlayerController playerController = FindObjectOfType<PlayerController>();
+            playerController.EnableShield();
+        }
        
        Destroy(gameObject);
     }
